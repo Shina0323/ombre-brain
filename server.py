@@ -65,7 +65,7 @@ decay_engine = DecayEngine(config, bucket_mgr)       # Decay engine / 衰减引�
 mcp = FastMCP(
     "Ombre Brain",
     host="0.0.0.0",
-    port=8000,
+    port=int(os.environ.get("PORT", 8000)),
 )
 
 
@@ -615,6 +615,6 @@ if __name__ == "__main__":
             expose_headers=["*"],
         )
         logger.info("CORS middleware enabled for remote transport / 已启用 CORS 中间件")
-        uvicorn.run(_app, host="0.0.0.0", port=8000)
+        uvicorn.run(_app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
     else:
         mcp.run(transport=transport)
