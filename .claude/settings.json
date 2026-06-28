@@ -6,8 +6,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/session_breath.py\"",
-            "shell": "powershell",
+            "command": "python3 $CLAUDE_PROJECT_DIR/.claude/hooks/session_breath.py",
+            "shell": "bash",
             "timeout": 12,
             "statusMessage": "Ombre Brain 正在浮现记忆..."
           }
@@ -18,8 +18,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/session_breath.py\"",
-            "shell": "powershell",
+            "command": "python3 $CLAUDE_PROJECT_DIR/.claude/hooks/session_breath.py",
+            "shell": "bash",
             "timeout": 12,
             "statusMessage": "Ombre Brain 正在浮现记忆..."
           }
